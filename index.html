@@ -217,6 +217,7 @@
                 <div class="butn" id="butnid"><button onclick="splayaudio()" id="btn3" class="button">Play</button>
                     <button onclick="spauseaudio()" id="pause3" class="stop">Pause</button>
                 </div>
+                <audio src="WhatsApp Audio 2024-09-21 at 2.04.27 PM.mp4" id="paudio"></audio>
 
             </div>
             <div class="box" id="hod"> <img src="WhatsApp Image 2024-09-11 at 11.43.58 PM.jpeg" alt="">
@@ -271,6 +272,15 @@
         function hpauseaudio() {
             h.pause();
             h.currentTime = 0;
+        }
+
+        let k = document.getElementById("paudio");
+        function splayaudio() {
+            k.play();
+        }
+        function spauseaudio() {
+            k.pause();
+            k.currentTime = 0;
         }
 
     </script>
